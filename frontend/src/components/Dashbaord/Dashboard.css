@@ -1,0 +1,17 @@
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.recharts-responsive-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: 'flex';
+
+}
