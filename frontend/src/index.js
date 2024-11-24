@@ -10,3 +10,5 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+require('dotenv').config()

@@ -3,11 +3,13 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 
 import './Dashboard.css'
 
+const backendEndpoint = process.env.REACT_APP_BACKEND_ENDPOINT;
+
 const Dashboard = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/data')
+        fetch(backendEndpoint + '/api/data')
             .then(response => response.json())
             .then(data => setData(data))
             .then(data => {

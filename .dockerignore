@@ -1,0 +1,50 @@
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+
+# Ignore virtual environments (common Python development folders)
+venv/
+env/
+ENV/
+.venv/
+
+# Ignore package managers' dependency folders (e.g., Node.js or Python)
+node_modules/
+bower_components/
+pip-wheel-metadata/
+__pypackages__/
+
+# Ignore Docker-related files (if not necessary)
+docker-compose.yml
+Dockerfile
+
+# Ignore log files
+*.log
+
+# Ignore the .env file if you don't want to include it in the image (this is optional)
+.env
+
+# Ignore any secret or configuration files that shouldn't be in the image
+secrets/
+*.pem
+*.key
+
+# Ignore IDE/Editor files (for common IDEs like VS Code, JetBrains, etc.)
+.vscode/
+.idea/
+*.iml
+
+# Ignore test or build directories
+tests/
+build/
+dist/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Git-related files (this is important to avoid pushing unnecessary git files)
+.git/
+.gitignore
